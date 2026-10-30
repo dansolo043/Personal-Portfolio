@@ -3,12 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My portfolio</title>
+  <title>Dan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <a href="#home" class="brand-link">Dan</a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#results">Results</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>Your portfolio starts here</h1>
-    <p>Fill in SPEC.md, then ask the agent to build your site.</p>
+    <section class="slide hero" id="home" aria-labelledby="home-title">
+      <div class="slide-inner">
+        <h1 id="home-title" class="hero-name">Dan</h1>
+        <p class="hero-intro">3rd year Statistics student at York University. Equipping decision makers with strong data analytics skills to add value to businesses and end users.</p>
+      </div>
+    </section>
+
+    <section class="slide slide--white" id="about" aria-labelledby="about-title">
+      <div class="slide-inner">
+        <h2 id="about-title" class="slide-title">About</h2>
+        <div class="about-content">
+          <p class="about-lead">I enjoy problem solving in high pressure and fast paced environments that push my limits and help me discover my potential.</p>
+          <p class="about-body">Outside of school and work I enjoy swimming and connecting with people from different walks of life.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="projects" aria-labelledby="projects-title">
+      <div class="slide-inner">
+        <h2 id="projects-title" class="slide-title">Projects</h2>
+        <div class="projects-table">
+          <article class="project">
+            <h3 class="project-title">
+              <a href="https://dansolo043.github.io/2025/10/11/causal-impact.html" target="_blank" rel="noopener noreferrer">Quantifying Sales Uplift With Causal Impact Analysis</a>
+            </h3>
+            <div class="project-body">
+              <p class="project-desc">Estimated an average daily incremental sales effect of $49.92 (95% confidence interval: $41.56 – $58.54), evaluating the campaign’s impact against predicted sales in the absence of the intervention while accounting for uncertainty.</p>
+              <p class="project-action">
+                <a href="https://dansolo043.github.io/2025/10/11/causal-impact.html" class="project-link" target="_blank" rel="noopener noreferrer">Open project page (dansolo043.github.io)</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--deep" id="results" aria-labelledby="results-title">
+      <div class="slide-inner">
+        <h2 id="results-title" class="slide-title">Results</h2>
+        <ul class="metrics">
+          <li class="metric">
+            <p class="metric-value" data-count>$49.92</p>
+            <p class="metric-label">Estimated average daily incremental sales effect</p>
+            <p class="metric-source">Quantifying Sales Uplift With Causal Impact Analysis</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide slide--white" id="skills" aria-labelledby="skills-title">
+      <div class="slide-inner">
+        <h2 id="skills-title" class="slide-title">Skills</h2>
+        <ul class="skills-list">
+          <li class="skill-item">Microsoft Excel</li>
+          <li class="skill-item">Microsoft PowerPoint</li>
+          <li class="skill-item">SQL</li>
+          <li class="skill-item">Python</li>
+          <li class="skill-item">Pandas</li>
+          <li class="skill-item">Matplotlib</li>
+          <li class="skill-item">scikit-learn</li>
+          <li class="skill-item">Tableau</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide slide--ink" id="contact" aria-labelledby="contact-title">
+      <div class="slide-inner">
+        <h2 id="contact-title" class="slide-title">Contact</h2>
+        <p class="contact-intro">Let's connect.</p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:dansolo043@gmail.com" class="contact-link">dansolo043@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dan-msolomon/" class="contact-link" target="_blank" rel="noopener noreferrer">linkedin.com/in/dan-msolomon</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
+
+  <footer class="deck-bar" aria-hidden="true">
+    <div class="deck-progress"><span></span></div>
+    <p class="deck-count">Slide <span class="slide-n">1</span> of <span class="slide-m">6</span></p>
+  </footer>
 </body>
 </html>
